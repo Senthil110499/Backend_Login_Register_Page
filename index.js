@@ -17,5 +17,9 @@ connectDB();
 // Routes
 app.use('/api/user', userRoutes);
 
-const port = process.env.PORT;
+app.get('/', (req, res) => {
+  res.send('Hello from Login and Regiter!');
+});
+
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
