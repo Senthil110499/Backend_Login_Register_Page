@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     res.status(200).send(`<div style="text-align: center; background-color:purple;  padding: 10px;"><h1>Login & Signup Page</h1></div>`)
 });
 
-
+const port = process.env.PORT;
 app.listen(port, () => {
     console.log("App is listening with port",port);
 })
